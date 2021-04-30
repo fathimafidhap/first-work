@@ -1,19 +1,40 @@
 import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import { Card, ListGroup, ListGroupItem, Button, Nav, Image } from 'react-bootstrap';
+import { Card, ListGroup, ListGroupItem, Button, Nav, Image,Carousel } from 'react-bootstrap';
 
 function App() {
   return (
-
+    // 
     <div className="App">
       <div className="container">
-        <Card style={{ width: '48rem', height: "37rem", position: "absolute" }}>
+        <Card style={{ width: '48rem', height: "37rem" }}>
           <Card.Body>
             <div className="row">
               <div className="col-4">
-                <img className="ab" src="https://www.vhplindia.com/images/products/product-1-700x700.jpg" style={{ width: "70%" }} ></img>
-              </div>
+
+              <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      className="ab" src="https://www.vhplindia.com/images/products/product-1-700x700.jpg" style={{ width: "70%" }} 
+      alt="First slide"
+    />
+    <Carousel.Caption>
+     
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      src="https://red-parts.react.themeforest.scompiler.ru/themes/red/images/products/product-1-2.jpg"
+      alt="Second slide"
+    />
+</Carousel.Item>
+</Carousel>
+</div>
+                {/* <img className="ab" src="https://www.vhplindia.com/images/products/product-1-700x700.jpg" style={{ width: "70%" }} ></img>
+              </div> */}
               <div className="col-8" id="gh">
                 <Card.Title><h4>Brandix Spark Plug Kit ASR-400</h4></Card.Title>
                 <p>Many philosophical debates that began in ancient times are still debated today.In one general sense, philosopy is associated with wisdom, indellectual culture and asearch of knowledge.</p>
@@ -34,7 +55,7 @@ function App() {
             </div>
           </Card.Body>
         </Card>
-        <Card style={{ width: '22rem', marginLeft: '70%', height: '39rem' }}>
+        <Card style={{ width: '22rem', marginLeft: '70%', height: '39rem',marginTop:"-53.5%" }}>
           
           <Card.Body>
             <Card.Title >
